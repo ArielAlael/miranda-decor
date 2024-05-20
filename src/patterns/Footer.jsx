@@ -3,6 +3,7 @@ import logoFooter from '../assets/logo-footer.png';
 import whatsapp from '../assets/icons/whatsapp.svg';
 import instagram from '../assets/icons/instagram.svg';
 import linkedin from '../assets/icons/linkedin.svg';
+import Title from '../components/Title';
 
 const social = [
   {
@@ -25,10 +26,10 @@ const social = [
 const Footer = () => {
   return (
     <footer>
-      <div className="bg-zinc-300 flex flex-col">
-        <h2 className="text-2xl">Entre em Contato</h2>
+      <div className="bg-zinc-300 flex flex-col justify-center items-center gap-12 py-12">
+        <Title contentTitle="Entre em Contato." />
         <img className="w-max" src={logoFooter} alt="Logo Miranda Decor" />
-        <p>
+        <p className="w-[600px] text-sm text-center">
           It is a long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout. The point of
           using Lorem.
@@ -38,6 +39,7 @@ const Footer = () => {
         <div className="flex gap-3">
           {social.map((rede) => (
             <a
+              key={rede.title}
               href={rede.src}
               className="bg-zinc-900 block p-1 rounded hover:bg-zinc-700"
             >
