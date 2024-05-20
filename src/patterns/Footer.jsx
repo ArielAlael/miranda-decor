@@ -41,14 +41,14 @@ const Footer = () => {
             <a
               key={rede.title}
               href={rede.src}
-              className="bg-zinc-900 block p-1 rounded hover:bg-zinc-700"
+              className="bg-zinc-950 block p-2 rounded hover:bg-zinc-900"
             >
               <img src={rede.icon} alt={rede.title} />
             </a>
           ))}
         </div>
       </div>
-      <div className="bg-zinc-900 flex justify-center py-1">
+      <div className="bg-zinc-950 flex justify-center py-1">
         <p className="text-zinc-50 text-xs">
           © 2024 Desenvolvido por{' '}
           <a href="/" className="text-blue-400">

@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../assets/logo-header.png';
 import { Instagram, MessageCircle } from 'lucide-react';
 
-const defaultStyleIcon = 'size-4';
+const defaultStyleIcon = 'size-4 stroke-1';
 const sectionsPage = ['Projetos', 'Sobre', 'Serviços', 'Contato'];
 const social = [
   {

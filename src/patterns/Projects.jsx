@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../components/Button';
 
 const imagesPath = [
   'project-1.jpg',
@@ -23,12 +24,9 @@ const Projects = () => {
           ))}
         </div>
       </div>
-      <a
-        className="text-zinc-950 rounded-full mt-6 py-3 px-8 bg-zinc-300 hover:bg-zinc-400"
-        href="/"
-      >
-        Mais Projetos ->
-      </a>
+      <div className="mt-6">
+        <Button text={'Mais Projetos ->'} />
+      </div>
     </section>
   );
 };
