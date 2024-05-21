@@ -51,7 +51,12 @@ const Footer = () => {
       <div className="bg-zinc-950 flex justify-center py-1">
         <p className="text-zinc-50 text-xs">
           © 2024 Desenvolvido por{' '}
-          <a href="/" className="text-blue-400">
+          <a
+            target="_blank"
+            href="https://github.com/ArielAlael"
+            className="text-blue-500"
+            rel="noreferrer"
+          >
             Ariel
           </a>{' '}
           - Todos os Direitos Reservados

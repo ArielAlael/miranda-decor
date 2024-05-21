@@ -1,15 +1,26 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 
-const Button = ({ text, icon }) => {
+const Button = ({ text, icon, type = 'primary' }) => {
+  const buttonClass = useMemo(() => {
+    switch (type) {
+      case 'primary':
+        return 'flex flex-row-reverse gap-2 bg-zinc-300 py-3 px-6 rounded-full hover:bg-zinc-400';
+      case 'secondary':
+        return 'flex flex-row-reverse gap-2 bg-zinc-950 text-zinc-50 py-3 px-6 rounded-full hover:bg-zinc-800 ';
+      case 'tertiary':
+        return 'flex flex-row-reverse gap-2 bg-zinc-500 text-zinc-50 py-3 px-6 rounded-full hover:bg-zinc-200 ';
+      default:
+        break;
+    }
+  }, [type]);
+
   return (
-    <a
-      className="flex items-center justify-center gap-3 flex-row-reverse text-zinc-950 rounded-full py-3 px-8 bg-zinc-300 hover:bg-zinc-400"
-      href="/"
-    >
+    <a className={buttonClass} href="/">
       {text}
       {icon}
     </a>
   );
 };
+1;
 
 export default Button;
