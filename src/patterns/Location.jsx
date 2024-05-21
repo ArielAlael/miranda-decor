@@ -5,7 +5,10 @@ import { MessageCircle } from 'lucide-react';
 
 const Location = () => {
   return (
-    <section className="flex flex-col items-center py-12 gap-6 bg-zinc-950">
+    <section
+      id="contato"
+      className="flex flex-col items-center py-12 gap-6 bg-zinc-950"
+    >
       <div className="flex flex-col gap-6">
         <Title contentTitle={'Aonde nos encontrar?'} typeTitle="secondary" />
         <p className="text-zinc-400">

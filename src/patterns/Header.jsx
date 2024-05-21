@@ -7,19 +7,32 @@ const sectionsPage = ['Projetos', 'Sobre', 'Serviços', 'Contato'];
 const social = [
   {
     title: '@arq.mirandadecor',
-    src: '/',
+    src: 'https://www.instagram.com/arq.mirandadecor/',
     icon: <Instagram className={defaultStyleIcon} />,
   },
   {
     title: '+55 (33) 98414-1043',
-    src: '/',
+    src: 'https://api.whatsapp.com/send?phone=5533984141043&text=me%20mande%20%20uma%20mensagem',
     icon: <MessageCircle className={defaultStyleIcon} />,
   },
 ];
 
+const handleScroll = (event, id) => {
+  event.preventDefault();
+  const section = document.getElementById(id);
+  const headerOffset = 70;
+  const elementPosition = section.getBoundingClientRect().top;
+  const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: 'smooth',
+  });
+};
+
 const Header = () => {
   return (
-    <header className="bg-background py-3 border-zinc-200 border-b flex justify-center">
+    <header className="z-50 fixed w-full bg-background py-3 border-zinc-200 border-b flex justify-center">
       <div className="w-[1000px] flex justify-between">
         <nav className="flex items-center gap-12">
           <a href="/">
@@ -31,6 +44,7 @@ const Header = () => {
                 <a
                   className="text-sm text-zinc-400 hover:text-zinc-950"
                   href={'#' + section.toLowerCase()}
+                  onClick={(e) => handleScroll(e, section.toLowerCase())}
                 >
                   {section}
                 </a>
@@ -42,8 +56,10 @@ const Header = () => {
           {social.map((rede) => (
             <div key={rede.title}>
               <a
+                target="_blank"
                 className="text-zinc-400 flex gap-2 items-center justify-end text-xs hover:text-zinc-950"
                 href={rede.src}
+                rel="noreferrer"
               >
                 {rede.title}
                 {rede.icon}

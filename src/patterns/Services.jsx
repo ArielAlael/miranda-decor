@@ -18,7 +18,7 @@ const services = [
   },
   {
     title: 'Projeto de Interior',
-    subTitle: 'residencial, Comercial e de Fachada',
+    subTitle: 'Residencial, Comercial e de Fachada',
     icon: <Sofa className={defaultStyleIcon} />,
   },
   {
@@ -30,7 +30,10 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="flex flex-col gap-6 justify-center items-center py-24">
+    <section
+      id="serviços"
+      className="flex flex-col gap-6 justify-center items-center py-24"
+    >
       <div className="flex flex-col gap-12 w-[1000px]">
         <div className="flex flex-col gap-6 justify-center items-center">
           <Title contentTitle={'Conheça nossos serviços'} />

@@ -9,7 +9,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <main className="bg-zinc-5">
+      <main className="bg-zinc-50 pt-[70px]">
         <Projects />
         <Services />
         <Location />

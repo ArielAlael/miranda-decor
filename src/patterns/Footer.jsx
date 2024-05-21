@@ -9,17 +9,17 @@ const social = [
   {
     title: 'Whatsapp',
     icon: whatsapp,
-    src: '/',
+    src: 'https://api.whatsapp.com/send?phone=5533984141043&text=me%20mande%20%20uma%20mensagem',
   },
   {
     title: 'Instagram',
     icon: instagram,
-    src: '/',
+    src: 'https://www.instagram.com/arq.mirandadecor/',
   },
   {
     title: 'Linkedin',
     icon: linkedin,
-    src: '/',
+    src: 'https://br.linkedin.com/in/taciane-fonseca-miranda-690517284?trk=people-guest_people_search-card',
   },
 ];
 
@@ -39,9 +39,11 @@ const Footer = () => {
         <div className="flex gap-3">
           {social.map((rede) => (
             <a
+              target="_blank"
               key={rede.title}
               href={rede.src}
               className="bg-zinc-950 block p-2 rounded hover:bg-zinc-900"
+              rel="noreferrer"
             >
               <img src={rede.icon} alt={rede.title} />
             </a>
