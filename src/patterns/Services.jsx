@@ -36,7 +36,7 @@ const Services = () => {
     >
       <div className="flex flex-col gap-12 w-[1000px]">
         <div className="flex flex-col gap-6 justify-center items-center">
-          <Title contentTitle={'Conheça nossos serviços'} />
+          <Title>Conheça nossos serviços</Title>
           <p className="w-[600px] text-sm text-center">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point

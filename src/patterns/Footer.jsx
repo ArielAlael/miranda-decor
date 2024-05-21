@@ -27,7 +27,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="bg-zinc-300 flex flex-col justify-center items-center gap-12 py-12">
-        <Title contentTitle="Entre em Contato." />
+        <Title>Entre em Contato.</Title>
         <img className="w-max" src={logoFooter} alt="Logo Miranda Decor" />
         <p className="w-[600px] text-sm text-center">
           It is a long established fact that a reader will be distracted by the

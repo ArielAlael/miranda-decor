@@ -10,7 +10,7 @@ const Location = () => {
       className="flex flex-col items-center py-12 gap-6 bg-zinc-950"
     >
       <div className="flex flex-col gap-6">
-        <Title contentTitle={'Aonde nos encontrar?'} typeTitle="secondary" />
+        <Title type="secondary">Aonde nos encontrar?</Title>
         <p className="text-zinc-400">
           Praça do Parquinho - Praça Martins Fraga, 548A - 4º andar - Manhuaçu,
           MG, 36900-203

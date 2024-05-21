@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 
 const Button = ({ text, icon, type = 'primary' }) => {
-  const buttonClass = useMemo(() => {
+  const styleButton = useMemo(() => {
     switch (type) {
       case 'primary':
         return 'flex flex-row-reverse gap-2 bg-zinc-300 py-3 px-6 rounded-full hover:bg-zinc-400';
@@ -15,7 +15,7 @@ const Button = ({ text, icon, type = 'primary' }) => {
   }, [type]);
 
   return (
-    <a className={buttonClass} href="/">
+    <a className={styleButton} href="/">
       {text}
       {icon}
     </a>

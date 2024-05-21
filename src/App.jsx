@@ -4,6 +4,7 @@ import Footer from './patterns/Footer';
 import Projects from './patterns/Projects';
 import Location from './patterns/Location';
 import Services from './patterns/Services';
+import About from './patterns/About';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Header />
       <main className="bg-zinc-50 pt-[70px]">
         <Projects />
+        <About />
         <Services />
         <Location />
       </main>
