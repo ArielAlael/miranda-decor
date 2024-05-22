@@ -1,11 +1,17 @@
 import React from 'react';
 import Button from '../components/Button';
 
+import project1 from "../assets/projects/project-1.jpg"
+import project2 from "../assets/projects/project-2.jpg"
+import project3 from "../assets/projects/project-3.jpg"
+import project4 from "../assets/projects/project-4.jpg"
+
+
 const imagesPath = [
-  'project-1.jpg',
-  'project-2.jpg',
-  'project-3.jpg',
-  'project-4.jpg',
+  project1,
+  project2,
+  project3,
+  project4
 ];
 
 const Projects = () => {
@@ -20,7 +26,7 @@ const Projects = () => {
             <a key={index} className="w-full" href="/">
               <img
                 className="rounded h-[400px] object-cover filter brightness-75 hover:brightness-100"
-                src={'src/assets/projects/' + path}
+                src={path}
                 alt="Imagem de Projeto"
               />
             </a>

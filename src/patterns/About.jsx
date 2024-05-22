@@ -1,6 +1,7 @@
 import React from 'react';
 import Title from './../components/Title';
 import { MapPin } from 'lucide-react';
+import tacianeMiranda from "../assets/taciane-miranda.jpg"
 
 const experiences = [
   {
@@ -29,7 +30,7 @@ const About = () => {
       <div className="flex items-center gap-12 w-[1000px]">
         <abbr title="Taciane Miranda">
           <div className="flex items-end center justify-center">
-            <div className="rounded bg-[url(src/assets/taciane-miranda.jpg)] w-[327.48px] h-[601px]"></div>
+            <img src={tacianeMiranda} className="rounded w-[327.48px] h-[601px]"></img>
             <h3 className="absolute font-bold rounded m-[-26px] text-lg py-3 px-16 text-zinc-950 bg-zinc-50 border border-zinc-300">
               Taciane Miranda
             </h3>

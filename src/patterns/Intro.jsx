@@ -1,6 +1,8 @@
 import React from 'react'
 import Button from '../components/Button'
 import { Instagram, Linkedin, MessageCircle } from 'lucide-react'
+import logoIntro from "../assets/logo-intro.png"
+import tacianeMirandaIntro from "../assets/taciane-miranda-intro.png"
 
 const social = [
     {
@@ -19,7 +21,7 @@ export const Intro = () => {
         <div className='flex justify-between w-[1000px]'>
             <div className='flex flex-col justify-between pb-6'>
                 <div className='flex flex-col gap-12'>
-                    <img className='w-max' src="src\assets\logo-intro.png" alt="Logo Miranda Decor"/>
+                    <img className='w-max' src={logoIntro} alt="Logo Miranda Decor"/>
                     <h1 className='font-medium w-[500px] text-3xl'>Transformando espaços em experiências únicas.</h1>
                 </div>
                 <div className='flex flex-col gap-12'>
@@ -35,7 +37,7 @@ export const Intro = () => {
                     </div>
                 </div>
             </div>
-            <img src="src\assets\taciane-miranda-intro.png" alt="" />
+            <img src={tacianeMirandaIntro} alt="" />
         </div>
     </section>
   )
