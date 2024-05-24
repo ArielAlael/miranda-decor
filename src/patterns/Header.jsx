@@ -12,7 +12,7 @@ const social = [
   },
   {
     title: '+55 (33) 98414-1043',
-    src: 'https://api.whatsapp.com/send?phone=5533984141043&text=me%20mande%20%20uma%20mensagem',
+    src: 'https://api.whatsapp.com/send?phone=5533984141043&text=me%20mande%20uma%20mensagem',
     icon: <MessageCircle className={defaultStyleIcon} />,
   },
 ];

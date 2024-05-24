@@ -9,7 +9,7 @@ const social = [
   {
     title: 'Whatsapp',
     icon: whatsapp,
-    src: 'https://api.whatsapp.com/send?phone=5533984141043&text=me%20mande%20%20uma%20mensagem',
+    src: 'https://api.whatsapp.com/send?phone=5533984141043&text=me%20mande%20uma%20mensagem',
   },
   {
     title: 'Instagram',
@@ -19,7 +19,7 @@ const social = [
   {
     title: 'Linkedin',
     icon: linkedin,
-    src: 'https://br.linkedin.com/in/taciane-fonseca-miranda-690517284?trk=people-guest_people_search-card',
+    src: 'https://www.linkedin.com/in/taciane-fonseca-miranda-690517284/',
   },
 ];
 
