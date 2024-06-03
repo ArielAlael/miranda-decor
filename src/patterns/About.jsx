@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from './../components/Title';
 import { MapPin } from 'lucide-react';
-import tacianeMiranda from "../assets/taciane-miranda.jpg"
+import tacianeMiranda from '../assets/taciane-miranda.jpg';
 
 const experiences = [
   {
@@ -11,8 +11,8 @@ const experiences = [
     icon: null,
   },
   {
-    label: '25+ Projetos realizados',
-    content: '25+',
+    label: '50+ Projetos personalizados',
+    content: '50+',
     contentTitle: 'projetos',
     icon: null,
   },
@@ -30,7 +30,10 @@ const About = () => {
       <div className="flex items-center gap-12 w-[1000px]">
         <abbr title="Taciane Miranda">
           <div className="flex items-end center justify-center">
-            <img src={tacianeMiranda} className="rounded w-[327.48px] h-[601px]"></img>
+            <img
+              src={tacianeMiranda}
+              className="rounded w-[327.48px] h-[601px]"
+            ></img>
             <h3 className="absolute font-bold rounded m-[-26px] text-lg py-3 px-16 text-zinc-950 bg-zinc-50 border border-zinc-300">
               Taciane Miranda
             </h3>
@@ -38,13 +41,13 @@ const About = () => {
         </abbr>
         <div className="flex flex-col gap-12">
           <div className="flex flex-col gap-6">
-            <Title type="tertiary">Quem nos somos?</Title>
+            <Title type="tertiary">Quem somos nós</Title>
             <p className="w-[625px]  text-sm">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using 'Content here,
-              content here', making it look like readable English...
+              A Miranda Decor é uma empresa de arquitetura especializada em
+              projetos arquitetônicos, de interiores, fachadas e reformas. Com
+              mais de seis anos de experiência no mercado, nos dedicamos a
+              transformar espaços com criatividade, funcionalidade e beleza,
+              atendendo às necessidades e sonhos de nossos clientes.
             </p>
           </div>
           <div className="flex justify-between">

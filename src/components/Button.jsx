@@ -15,15 +15,7 @@ const Button = ({ text, src, icon, type = 'primary' }) => {
   }, [type]);
 
   return (
-    <a
-      onClick={() => {
-        alert('Função em desenvolvimento!');
-      }}
-      className={styleButton}
-      target="_blank"
-      href={src}
-      rel="noreferrer"
-    >
+    <a className={styleButton} target="_blank" href={src} rel="noreferrer">
       {text}
       {icon}
     </a>

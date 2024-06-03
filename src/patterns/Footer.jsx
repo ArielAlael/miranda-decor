@@ -9,7 +9,7 @@ const social = [
   {
     title: 'Whatsapp',
     icon: whatsapp,
-    src: 'https://api.whatsapp.com/send?phone=5533984141043&text=me%20mande%20uma%20mensagem',
+    src: 'https://api.whatsapp.com/send?phone=5533998118983&text=',
   },
   {
     title: 'Instagram',
@@ -30,9 +30,8 @@ const Footer = () => {
         <Title>Entre em Contato.</Title>
         <img className="w-max" src={logoFooter} alt="Logo Miranda Decor" />
         <p className="w-[600px] text-sm text-center">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem.
+          Transformamos espaços em experiências únicas. Contate-nos: +55 (33)
+          99811-8983 | Praça Martins Fraga, 548 A, Sagrada Família, Manhuaçu MG.
         </p>
       </div>
       <div className="flex justify-center py-12 bg-zinc-400">

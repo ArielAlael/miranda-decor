@@ -29,6 +29,7 @@ export const Intro = () => {
           <div className="flex flex-col gap-12">
             <div className="flex items-center gap-6">
               <Button
+                src={'https://api.whatsapp.com/send?phone=5533998118983&text='}
                 icon={<MessageCircle className="size-6 stroke-1" />}
                 text={'Entrar em contato'}
                 type="tertiary"

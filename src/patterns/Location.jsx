@@ -12,8 +12,7 @@ const Location = () => {
       <div className="flex flex-col gap-6">
         <Title type="secondary">Aonde nos encontrar?</Title>
         <p className="text-zinc-400">
-          Praça do Parquinho - Praça Martins Fraga, 548A - 4º andar - Manhuaçu,
-          MG, 36900-203
+          Praça Martins Fraga, 548 A - Bairro: Sagrada Família
         </p>
       </div>
       <iframe
@@ -27,6 +26,7 @@ const Location = () => {
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
       <Button
+        src={'https://api.whatsapp.com/send?phone=5533998118983&text='}
         text="Entrar em Contato"
         icon={<MessageCircle className="size-6 stroke-1" />}
       />

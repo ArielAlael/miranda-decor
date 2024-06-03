@@ -11,8 +11,8 @@ const social = [
     icon: <Instagram className={defaultStyleIcon} />,
   },
   {
-    title: '+55 (33) 98414-1043',
-    src: 'https://api.whatsapp.com/send?phone=5533984141043&text=me%20mande%20uma%20mensagem',
+    title: '+55 (33) 99811-8983',
+    src: 'https://api.whatsapp.com/send?phone=5533998118983&text=',
     icon: <MessageCircle className={defaultStyleIcon} />,
   },
 ];

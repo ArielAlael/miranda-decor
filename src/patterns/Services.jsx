@@ -7,18 +7,18 @@ const defaultStyleIcon = 'stroke-[0.4] stroke-zinc-300 size-28';
 
 const services = [
   {
-    title: 'Consultoria Presencial e Online',
+    title: 'Consultoria Online e Presencial',
     subTitle: '',
     icon: <MessagesSquare className={defaultStyleIcon} />,
   },
   {
-    title: 'Projeto Arquitetônico',
+    title: 'Projeto Arquitetônico e de Fachada',
     subTitle: '',
     icon: <Pyramid className={defaultStyleIcon} />,
   },
   {
     title: 'Projeto de Interior',
-    subTitle: 'Residencial, Comercial e de Fachada',
+    subTitle: 'Comeciais e Residenciais',
     icon: <Sofa className={defaultStyleIcon} />,
   },
   {
@@ -37,10 +37,12 @@ const Services = () => {
       <div className="flex flex-col gap-12 w-[1000px]">
         <div className="flex flex-col gap-6 justify-center items-center">
           <Title>Conheça nossos serviços</Title>
-          <p className="w-[600px] text-sm text-center">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem.
+          <p className="w-[720px] text-sm text-center">
+            Na Miranda Decor, combinamos inovação, técnica e sensibilidade
+            estética para criar ambientes que inspirem e proporcionem bem-estar.
+            Estamos prontos para transformar seus espaços em verdadeiras obras
+            de arte funcionais, sempre com foco na satisfação e na construção de
+            relacionamentos duradouros.
           </p>
         </div>
         <div className="flex justify-between">
@@ -58,7 +60,11 @@ const Services = () => {
           ))}
         </div>
       </div>
-      <Button text="Tire suas Dúvidas ->" type="secondary" />
+      <Button
+        src={'https://api.whatsapp.com/send?phone=5533998118983&text='}
+        text="Tire suas Dúvidas ->"
+        type="secondary"
+      />
     </section>
   );
 };
