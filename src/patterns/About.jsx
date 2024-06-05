@@ -47,7 +47,7 @@ const About = () => {
               projetos arquitetônicos, de interiores, fachadas e reformas. Com
               mais de seis anos de experiência no mercado, nos dedicamos a
               transformar espaços com criatividade, funcionalidade e beleza,
-              atendendo às necessidades e sonhos de nossos clientes.
+              atendendo às necessidades e sonhos de nossos clientes.
             </p>
           </div>
           <div className="flex justify-between">
@@ -58,12 +58,14 @@ const About = () => {
               >
                 {item.icon}
                 {!item.icon ? (
-                  <h1 className="text-center italic m-auto text-4xl font-bold">
-                    {item.content}
-                    <h2 className="font-normal not-italic text-2xl">
+                  <div className="flex flex-col items-center justify-center h-full">
+                    <h1 className="text-center italic text-4xl font-bold">
+                      {item.content}
+                    </h1>
+                    <h2 className="font-normal text-2xl">
                       {item.contentTitle}
                     </h2>
-                  </h1>
+                  </div>
                 ) : null}
 
                 <div className="m-[-24px] flex items-center justify-center absolute rounded-full h-[48px] w-[185px] bg-zinc-950">

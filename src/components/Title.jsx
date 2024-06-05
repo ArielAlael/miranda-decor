@@ -14,7 +14,9 @@ const Title = ({ type = 'primary', children }) => {
     }
   }, [type]);
 
-  return <h2 className={styleTitle}>{children}</h2>;
+  return (
+    <h2 className={styleTitle}>{children ? children : 'Carregando...'}</h2>
+  );
 };
 
 export default Title;

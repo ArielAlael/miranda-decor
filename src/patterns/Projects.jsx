@@ -25,9 +25,8 @@ const Projects = () => {
             <a
               key={index}
               // eslint-disable-next-line react/no-unknown-property
-              afterLabel={project.label}
+              afterlabel={project.label}
               className="w-full after:content-[attr(afterLabel)] after:block after:mt-2 text-zinc-700 text-sm hover:after:text-zinc-400"
-              href="/"
             >
               <img
                 className="rounded h-[400px] object-cover filter brightness-75 hover:brightness-100"
