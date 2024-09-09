@@ -1,6 +1,8 @@
 import React from 'react';
 import Button from '../components/Button';
 
+import { Link } from 'react-router-dom';
+
 import project1 from '../assets/projects/project-1.jpg';
 import project2 from '../assets/projects/project-2.jpg';
 import project3 from '../assets/projects/project-3.jpg';
@@ -38,7 +40,12 @@ const Projects = () => {
         </div>
       </div>
       <div className="mt-6">
-        <Button text={'Mais Projetos ->'} />
+        <Link
+          to="projetos"
+          className="cursor-pointer flex items-center flex-row-reverse gap-2 bg-zinc-300 py-3 px-6 rounded-full hover:bg-zinc-400"
+        >
+          Mais Projetos
+        </Link>
       </div>
     </section>
   );

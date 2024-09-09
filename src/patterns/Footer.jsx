@@ -4,6 +4,7 @@ import whatsapp from '../assets/icons/whatsapp.svg';
 import instagram from '../assets/icons/instagram.svg';
 import linkedin from '../assets/icons/linkedin.svg';
 import Title from '../components/Title';
+import Location from './Location';
 
 const social = [
   {
@@ -26,10 +27,11 @@ const social = [
 const Footer = () => {
   return (
     <footer>
+      <Location />
       <div className="bg-zinc-300 flex flex-col justify-center items-center gap-12 py-12">
         <Title>Entre em Contato.</Title>
         <img className="w-max" src={logoFooter} alt="Logo Miranda Decor" />
-        <p className="w-[600px] text-sm text-center">
+        <p className="text-sm text-center px-6 lg:w-[600px]">
           Transformamos espaços em experiências únicas. Contate-nos: +55 (33)
           99811-8983 | Praça Martins Fraga, 548 A, Sagrada Família, Manhuaçu MG.
         </p>

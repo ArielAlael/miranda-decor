@@ -43,7 +43,7 @@ const Header = () => {
               <li key={section}>
                 <a
                   className="text-sm text-zinc-400 hover:text-zinc-950"
-                  href={'#' + section.toLowerCase()}
+                  href={'/#' + section.toLowerCase()}
                   onClick={(e) => handleScroll(e, section.toLowerCase())}
                 >
                   {section}

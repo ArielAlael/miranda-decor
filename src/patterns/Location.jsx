@@ -16,10 +16,8 @@ const Location = () => {
         </p>
       </div>
       <iframe
-        className="rounded filter brightness-90 hover:brightness-100"
+        className="rounded filter brightness-90  hover:brightness-100 lg:w-[1000px] lg:px-0 h-[400px] w-full px-6"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d935.7439550620935!2d-42.04089983041624!3d-20.25983754069182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbb03909eba69a3%3A0xc9122a42bf27ca78!2sMiranda%20Decor!5e0!3m2!1spt-BR!2sbr!4v1716240225711!5m2!1spt-BR!2sbr"
-        width="1000"
-        height="400"
         style={{ border: 0 }}
         allowFullScreen=""
         loading="lazy"
