@@ -37,7 +37,7 @@ const Services = () => {
       <div className="flex flex-col gap-12 w-[1000px]">
         <div className="flex flex-col gap-6 justify-center items-center">
           <Title>Conheça nossos serviços</Title>
-          <p className="w-[720px] text-sm text-center">
+          <p className="text-sm text-center w-svw px-6 lg:w-[800px]">
             Na Miranda Decor, combinamos inovação, técnica e sensibilidade
             estética para criar ambientes que inspirem e proporcionem bem-estar.
             Estamos prontos para transformar seus espaços em verdadeiras obras
@@ -45,11 +45,11 @@ const Services = () => {
             relacionamentos duradouros.
           </p>
         </div>
-        <div className="flex justify-between">
+        <div className="items-center flex-col gap-2 flex lg:flex-row justify-between">
           {services.map((service, index) => (
             <div
               key={index}
-              className="rounded flex flex-col items-center justify-center border border-zinc-300 w-[244px] h-[400px]"
+              className="rounded flex flex-col items-center justify-center border border-zinc-300 h-[244px] w-[244px] lg:h-[400px]"
             >
               <div className="flex flex-col items-center justify-center">
                 {service.icon}

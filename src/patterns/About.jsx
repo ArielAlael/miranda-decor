@@ -27,9 +27,9 @@ const experiences = [
 const About = () => {
   return (
     <section id="sobre" className="flex justify-center items-center py-24">
-      <div className="flex items-center gap-12 w-[1000px]">
+      <div className="lg:flex items-center gap-12 justify-between">
         <abbr title="Taciane Miranda">
-          <div className="flex items-end center justify-center">
+          <div className="pb-12 lg:pb-0 flex items-end center justify-center">
             <img
               src={tacianeMiranda}
               className="rounded w-[327.48px] h-[601px]"
@@ -40,9 +40,9 @@ const About = () => {
           </div>
         </abbr>
         <div className="flex flex-col gap-12">
-          <div className="flex flex-col gap-6">
-            <Title type="tertiary">Quem somos nós</Title>
-            <p className="w-[625px]  text-sm">
+          <div className="flex px-6 lg:px-0 w-svw lg:w-[685px] flex-col gap-6">
+            <Title type="primary">Quem somos nós</Title>
+            <p className="text-sm text-center lg:text-left">
               A Miranda Decor é uma empresa de arquitetura especializada em
               projetos arquitetônicos, de interiores, fachadas e reformas. Com
               mais de seis anos de experiência no mercado, nos dedicamos a
@@ -50,7 +50,7 @@ const About = () => {
               atendendo às necessidades e sonhos de nossos clientes.
             </p>
           </div>
-          <div className="flex justify-between">
+          <div className="flex flex-col gap-12 lg:gap-0 items-center lg:flex-row lg:justify-between">
             {experiences.map((item, index) => (
               <div
                 key={index}

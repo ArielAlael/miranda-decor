@@ -11,7 +11,7 @@ const Location = () => {
     >
       <div className="flex flex-col gap-6">
         <Title type="secondary">Aonde nos encontrar?</Title>
-        <p className="text-zinc-400">
+        <p className="text-zinc-400 text-sm">
           Praça Martins Fraga, 548 A - Bairro: Sagrada Família
         </p>
       </div>

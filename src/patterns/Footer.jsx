@@ -30,7 +30,11 @@ const Footer = () => {
       <Location />
       <div className="bg-zinc-300 flex flex-col justify-center items-center gap-12 py-12">
         <Title>Entre em Contato.</Title>
-        <img className="w-max" src={logoFooter} alt="Logo Miranda Decor" />
+        <img
+          className="lg:w-max w-32"
+          src={logoFooter}
+          alt="Logo Miranda Decor"
+        />
         <p className="text-sm text-center px-6 lg:w-[600px]">
           Transformamos espaços em experiências únicas. Contate-nos: +55 (33)
           99811-8983 | Praça Martins Fraga, 548 A, Sagrada Família, Manhuaçu MG.

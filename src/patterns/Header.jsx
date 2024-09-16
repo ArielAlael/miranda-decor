@@ -32,7 +32,7 @@ const handleScroll = (event, id) => {
 
 const Header = () => {
   return (
-    <header className="z-50 fixed w-full bg-background py-3 border-zinc-200 border-b flex justify-center">
+    <header className="z-50 fixed w-full bg-background py-3 border-zinc-200 border-b hidden lg:flex justify-center">
       <div className="w-[1000px] flex justify-between">
         <nav className="flex items-center gap-12">
           <a href="/">

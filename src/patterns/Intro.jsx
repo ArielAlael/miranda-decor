@@ -18,11 +18,11 @@ const social = [
 export const Intro = () => {
   return (
     <section className="flex justify-center mt-24">
-      <div className="flex justify-between w-[1000px]">
-        <div className="flex flex-col justify-between pb-6">
-          <div className="flex flex-col gap-12">
+      <div className="flex justify-between lg:w-[1000px]">
+        <div className="flex flex-col justify-between items-center lg:items-start pb-6">
+          <div className="flex items-center lg:items-start lg:flex-col  flex-col gap-12 pb-12 lg:pb-0">
             <img className="w-max" src={logoIntro} alt="Logo Miranda Decor" />
-            <h1 className="font-medium w-[500px] text-3xl">
+            <h1 className="text-center lg:text-left font-medium w-svw px-6 lg:px-0 lg:w-[500px] text-3xl">
               Transformando espaços em experiências únicas.
             </h1>
           </div>
@@ -46,7 +46,7 @@ export const Intro = () => {
                 </a>
               ))}
             </div>
-            <div className="flex gap-3">
+            <div className="flex gap-3 justify-center lg:justify-start">
               <span className="text-sm text-zinc-600">Taciane Miranda</span>
               <span className="text-sm text-zinc-600">
                 Arquiteta e Urbanista
@@ -54,7 +54,7 @@ export const Intro = () => {
             </div>
           </div>
         </div>
-        <img src={tacianeMirandaIntro} alt="" />
+        <img className="hidden lg:block" src={tacianeMirandaIntro} alt="" />
       </div>
     </section>
   );

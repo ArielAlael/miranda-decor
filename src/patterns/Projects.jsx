@@ -22,7 +22,7 @@ const Projects = () => {
       className="flex flex-col items-center bg-zinc-950 pt-24 after:content-[''] after:bg-zinc-300 after:w-full after:h-24 after:mt-24"
     >
       <div className="flex justify-center">
-        <div className="flex gap-2 w-[1000px]">
+        <div className="flex gap-2 items-center flex-col justify-center lg:flex-row lg:justify-between">
           {images.map((project, index) => (
             <a
               key={index}
@@ -31,7 +31,7 @@ const Projects = () => {
               className="w-full after:content-[attr(afterLabel)] after:block after:mt-2 text-zinc-700 text-sm hover:after:text-zinc-400"
             >
               <img
-                className="rounded h-[400px] object-cover filter brightness-75 hover:brightness-100"
+                className="w-[244px] rounded h-[400px] object-cover filter brightness-75 hover:brightness-100"
                 src={project.path}
                 alt="Imagem de Projeto"
               />
