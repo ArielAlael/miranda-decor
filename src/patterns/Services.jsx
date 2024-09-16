@@ -34,7 +34,7 @@ const Services = () => {
       id="serviços"
       className="flex flex-col gap-6 justify-center items-center py-24"
     >
-      <div className="flex flex-col gap-12 w-[1000px]">
+      <div className="flex flex-col gap-12 lg:w-[1000px]">
         <div className="flex flex-col gap-6 justify-center items-center">
           <Title>Conheça nossos serviços</Title>
           <p className="text-sm text-center w-svw px-6 lg:w-[800px]">
